@@ -1,0 +1,37 @@
+{
+  "name": "llmcalling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec tsx ./src/index.ts",
+    "vdev": "nodemon --exec tsx ./src/vercel/index.ts",
+    "lgdev": "nodemon --exec tsx ./src/langchain/langgraph/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/pg": "^8.15.5",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^2.0.17",
+    "@langchain/community": "^0.3.57",
+    "@langchain/core": "^0.3.78",
+    "@langchain/google-genai": "^0.2.18",
+    "@langchain/langgraph": "^0.4.9",
+    "@langchain/langgraph-checkpoint-mongodb": "^0.1.1",
+    "@langchain/langgraph-checkpoint-postgres": "^0.1.2",
+    "ai": "^5.0.60",
+    "ai-sdk-provider-gemini-cli": "^1.1.2",
+    "dotenv": "^16.6.1",
+    "mongodb": "^6.20.0",
+    "pg": "^8.16.3",
+    "zod": "^3.25.76"
+  },
+  "type": "module"
+}
